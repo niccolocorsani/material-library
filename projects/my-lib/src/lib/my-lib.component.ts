@@ -3,9 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'lib-my-lib',
   template: `
-    <p>
-      my-lib works!
-    </p>
+    <div>
+      sdkflsdmfs
+      sdfsd
+      fsdf
+      ds
+      f
+    </div>
   `,
   styles: [
   ]
