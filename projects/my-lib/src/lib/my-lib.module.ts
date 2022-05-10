@@ -5,10 +5,6 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {MaterialExampleModule} from "../material.module";
 
 
-
-
-
-
 @NgModule({
   declarations: [
     MyLibComponent

@@ -14,11 +14,8 @@ import { Component, OnInit } from '@angular/core';
         <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
       </mat-form-field>
     </form>
-
   `,
-  styles: [
-
-  ]
+  styleUrls: ['my-lib.component.scss']
 })
 export class MyLibComponent implements OnInit {
 
