@@ -12,8 +12,6 @@ import {MyLibModule} from "my-lib";
 @NgModule({
   declarations: [InputOverviewExample],
   imports: [
-
-
     MyLibModule
   ],
   providers: [],
