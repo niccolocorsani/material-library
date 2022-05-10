@@ -7,17 +7,14 @@ import {InputOverviewExample} from './input-overview-example';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
+import {MyLibModule} from "my-lib";
 
 @NgModule({
   declarations: [InputOverviewExample],
   imports: [
-    BrowserAnimationsModule,
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    MatNativeDateModule,
-    MaterialExampleModule,
-    ReactiveFormsModule,
+
+
+    MyLibModule
   ],
   providers: [],
   bootstrap: [InputOverviewExample],
