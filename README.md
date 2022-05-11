@@ -19,3 +19,13 @@ to tsconfig.json
 
 Altro punto importante è che quando viene fatto il push sia specificato l'ultima versione della libreria nel package.json. 
 Siccome tutto punta sempre al compilato dist, assicurarsi che venga fatto ng build prima di uploadre su npm
+
+
+
+risulta inoltre, importante eseguire il comando
+
+
+''' 
+
+ng build my-lib
+'''
