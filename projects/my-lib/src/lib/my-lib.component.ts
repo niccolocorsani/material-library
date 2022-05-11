@@ -3,7 +3,7 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 @Component({
   selector: 'lib-my-lib',
   template: `
-    <form class="example-form">
+    <form class="example-form ooeo" >
       <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Favorite food</mat-label>
         <input matInput placeholder="Ex. Pizza" value="Sushi">
