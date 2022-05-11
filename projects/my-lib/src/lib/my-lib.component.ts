@@ -5,12 +5,12 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
   template: `
     <form class="example-form ooeo" >
       <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>Favorite food</mat-label>
+        <mat-label>username</mat-label>
         <input matInput placeholder="Ex. Pizza" value="Sushi">
       </mat-form-field>
 
       <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>Leave a comment</mat-label>
+        <mat-label>password</mat-label>
         <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
       </mat-form-field>
     </form>
