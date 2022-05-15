@@ -8,7 +8,12 @@ import {Component} from '@angular/core';
   styleUrls: ['input-overview-example.css'],
   templateUrl: 'input-overview-example.html',
 })
-export class InputOverviewExample {}
+export class InputOverviewExample {
+
+  addItem(newItem: string) {
+    console.log(newItem);
+  }
+}
 
 
 /**  Copyright 2022 Google LLC. All Rights Reserved.

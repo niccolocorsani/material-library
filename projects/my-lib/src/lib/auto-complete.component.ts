@@ -1,6 +1,7 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {map, Observable, startWith} from "rxjs";
 import {FormControl} from "@angular/forms";
+import { Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'lib-auto-complete',

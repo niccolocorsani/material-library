@@ -8,7 +8,6 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
         <mat-label>username</mat-label>
         <input matInput placeholder="Ex. Pizza" value="Sushi">
       </mat-form-field>
-
       <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>password</mat-label>
         <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
