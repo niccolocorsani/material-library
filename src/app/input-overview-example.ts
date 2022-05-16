@@ -9,6 +9,7 @@ import {Component} from '@angular/core';
   templateUrl: 'input-overview-example.html',
 })
 export class InputOverviewExample {
+    val= 'ds';
 
   addItem(newItem: string) {
     console.log(newItem);

@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation} from '@angular/core';
 import {FormControl, Validators} from "@angular/forms";
 import {MyErrorStateMatcher} from "./input-error-handling.component";
 
@@ -15,6 +15,8 @@ import {MyErrorStateMatcher} from "./input-error-handling.component";
         </mat-form-field>
     `,
     styleUrls: ['my-lib.component.scss', '../theme.scss'],
+    encapsulation: ViewEncapsulation.None  //// Questo serve per incapsulare al meglio anche lo stile di material
+
 })
 export class InputPasswordComponent implements OnInit {
 

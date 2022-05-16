@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, ViewEncapsulation} from '@angular/core';
 import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
 import { Output, EventEmitter } from '@angular/core';
@@ -30,6 +30,8 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
     </form>
   `,
   styleUrls: ['my-lib.component.scss','../theme.scss'],
+  encapsulation: ViewEncapsulation.None  //// Questo serve per incapsulare al meglio anche lo stile di material
+
 })
 export class InputErrorHandlingComponent  {
 
