@@ -1,5 +1,4 @@
 import {NgModule} from '@angular/core';
-import {MyLibComponent} from './my-lib.component';
 import {MatNativeDateModule} from "@angular/material/core";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MaterialExampleModule} from "../material.module";
@@ -8,14 +7,19 @@ import {BrowserModule} from "@angular/platform-browser";
 import {AutoCompleteComponent} from "./auto-complete.component";
 import {SpinnerComponent} from './spinner.component';
 import { InputErrorHandlingComponent } from './input-error-handling.component';
+import { InputPasswordComponent } from './input-password.component';
+import { NormalInputComponent } from './normal-input.component';
 
 
 @NgModule({
     declarations: [
-        MyLibComponent,
+
         AutoCompleteComponent,
         SpinnerComponent,
-        InputErrorHandlingComponent
+        InputErrorHandlingComponent,
+        InputPasswordComponent,
+        NormalInputComponent,
+
     ],
     imports: [
         BrowserAnimationsModule,
@@ -27,10 +31,12 @@ import { InputErrorHandlingComponent } from './input-error-handling.component';
 
     ],
     exports: [
-        MyLibComponent,
+
         AutoCompleteComponent,
         SpinnerComponent,
-        InputErrorHandlingComponent
+        InputErrorHandlingComponent,
+        InputPasswordComponent,
+        NormalInputComponent
 
     ]
 })

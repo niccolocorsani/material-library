@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
 import { Output, EventEmitter } from '@angular/core';
@@ -32,6 +32,7 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrls: ['my-lib.component.scss','../theme.scss'],
 })
 export class InputErrorHandlingComponent  {
+
 
 
   @Output() newItemEvent = new EventEmitter<string>();
