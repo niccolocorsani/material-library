@@ -9,9 +9,22 @@
   width: 100%;
 }
 
-.ooeo {
-  border-radius: 10px 10px 10px 10px;
+input {
+  font-family : 'Vollkorn' !important;
   //background-color: coral;
 }
 
+
+mat-label{
+  font-family : 'Vollkorn' !important;
+
+}
+
+mat-error{
+  font-family : 'Vollkorn' !important;
+}
+
+mat-form-field{
+  background-color: #ece8e8;
+}
 
