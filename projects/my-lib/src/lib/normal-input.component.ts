@@ -5,12 +5,14 @@ import {MyErrorStateMatcher} from "./input-error-handling.component";
 @Component({
     selector: 'lib-normal-input',
     template: `
-        <mat-form-field appearance="fill">
-            <mat-label>{{item}}</mat-label>
-            <input matInput (keyup)="addNewItem(newItem.value)" #newItem>
-        </mat-form-field>
-  `,
-    styleUrls: ['my-lib.component.scss','../theme.scss'],
+        <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>{{item}}</mat-label>
+                <input matInput (keyup)="addNewItem(newItem.value)" #newItem>
+            </mat-form-field>
+        </form>
+    `,
+    styleUrls: ['my-lib.component.scss', '../theme.scss'],
     encapsulation: ViewEncapsulation.None  //// Questo serve per incapsulare al meglio anche lo stile di material
 
 })

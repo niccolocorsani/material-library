@@ -5,14 +5,15 @@ import {MyErrorStateMatcher} from "./input-error-handling.component";
 @Component({
     selector: 'lib-input-password',
     template: `
-        <mat-form-field appearance="fill">
-            <mat-label>Enter your password</mat-label>
-            <input matInput [type]="hide ? 'password' : 'text'" (keyup)="addNewItem(newItem.value)" #newItem>
-            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-                    [attr.aria-pressed]="hide">
-                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-            </button>
-        </mat-form-field>
+        <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Digita la tua password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" (keyup)="addNewItem(newItem.value)" #newItem>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                </button>
+            </mat-form-field>
+        </form>
     `,
     styleUrls: ['my-lib.component.scss', '../theme.scss'],
     encapsulation: ViewEncapsulation.None  //// Questo serve per incapsulare al meglio anche lo stile di material

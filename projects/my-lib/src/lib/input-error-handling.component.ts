@@ -21,10 +21,10 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
                placeholder="Ex. pat@example.com"#newItem >
         <mat-hint></mat-hint>
         <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-          Please enter a valid email address
+          Digitare un indirizzo E-mail valido
         </mat-error>
         <mat-error *ngIf="emailFormControl.hasError('required')">
-          Email is <strong>required</strong>
+          Email è<strong>richiesta</strong>
         </mat-error>
       </mat-form-field>
     </form>
