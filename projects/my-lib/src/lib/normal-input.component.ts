@@ -8,7 +8,7 @@ import {MyErrorStateMatcher} from "./input-error-handling.component";
         <form class="example-form">
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>{{item}}</mat-label>
-                <input matInput (keyup)="addNewItem(newItem.value)" #newItem>
+                <input matInput value="{{input_value}}"  (keyup)="addNewItem(newItem.value)" #newItem >
             </mat-form-field>
         </form>
     `,
@@ -20,7 +20,7 @@ export class NormalInputComponent implements OnInit {
 
 
     @Input() item = '';
-
+    @Input() input_value: string;
 
     @Output() newItemEvent = new EventEmitter<string>();
     emailFormControl = new FormControl('', [Validators.required, Validators.email]);
