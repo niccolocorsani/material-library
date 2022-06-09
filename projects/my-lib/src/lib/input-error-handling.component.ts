@@ -19,7 +19,7 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
                 <mat-label>Email</mat-label>
                 <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
                        (keyup)="addNewItem(newItem.value)"
-                       placeholder="Ex. pat@example.com" #newItem>
+                       placeholder="Ex. pat@example.com"  value="{{input_value}}" #newItem>
                 <mat-hint></mat-hint>
                 <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
                     Digitare un indirizzo E-mail valido
@@ -40,6 +40,8 @@ export class InputErrorHandlingComponent {
     @Output() newItemEvent = new EventEmitter<string>();
     emailFormControl = new FormControl('', [Validators.required, Validators.email]);
     matcher = new MyErrorStateMatcher();
+
+    @Input() input_value: string;
 
     constructor() {
     }

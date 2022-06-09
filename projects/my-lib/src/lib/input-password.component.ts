@@ -8,7 +8,7 @@ import {MyErrorStateMatcher} from "./input-error-handling.component";
         <form class="example-form">
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Digita la tua password</mat-label>
-                <input matInput [type]="hide ? 'password' : 'text'" (keyup)="addNewItem(newItem.value)"  #newItem>
+                <input matInput [type]="hide ? 'password' : 'text'" (keyup)="addNewItem(newItem.value)" value="{{input_value}}" #newItem>
                 <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
                         [attr.aria-pressed]="hide">
                 </button>
@@ -28,6 +28,8 @@ export class InputPasswordComponent implements OnInit {
     @Output() newItemEvent = new EventEmitter<string>();
     emailFormControl = new FormControl('', [Validators.required, Validators.email]);
     matcher = new MyErrorStateMatcher();
+
+    @Input() input_value: string;
 
     constructor() {
     }
