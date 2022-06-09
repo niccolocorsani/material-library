@@ -16,10 +16,11 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
     template: `
         <form class="example-form">
             <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>Email</mat-label>
-                <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                <mat-label>{{input_value}}</mat-label>
+                <input type="email" value="{{input_value}}" matInput [formControl]="emailFormControl"
+                       [errorStateMatcher]="matcher"
                        (keyup)="addNewItem(newItem.value)"
-                       placeholder="Ex. pat@example.com"  value="{{input_value}}" #newItem>
+                       #newItem>
                 <mat-hint></mat-hint>
                 <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
                     Digitare un indirizzo E-mail valido
