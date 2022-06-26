@@ -5,9 +5,9 @@ import {MyErrorStateMatcher} from "./input-error-handling.component";
 @Component({
     selector: 'lib-input-password',
     template: `
-        <form class="example-form">
+        <form class="example-form" style="background-color: white">
             <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>Digita la tua password</mat-label>
+                <mat-label>Password</mat-label>
                 <input matInput [type]="hide ? 'password' : 'text'" (keyup)="addNewItem(newItem.value)"
                        value="{{input_value}}" #newItem>
                 <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
